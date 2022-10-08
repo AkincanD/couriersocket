@@ -31,3 +31,9 @@ npm install
 ```javascript
 node index.js
 ```
+
+> Tüm denemelerinizi çok basit bir şekilde replit üzerinde yapabiliriz. aşağıda bulunan bağlantıdan oluşturmuş olduğum projeye ulaşıp çalıştırabilirsiniz.
+
+> ...............
+
+[![Replit](https://cdn.freebiesupply.com/logos/large/2x/replit-logo-png-transparent.png "Replit")](https://bit.ly/3SO7kxM "Replit")
