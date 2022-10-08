@@ -17,17 +17,17 @@ server.listen(4646, function () {
 Gerekli programlar kurulduktan sonra yapılması gerekenler sırasıyla şu şekildedir.
 
 **Projeyi klonlayalım**:
-- ```
+
+```javascript
 git clone https://github.com/AkincanD/couriersocket.git
 ```
 
-**Gerekli Paketleri Yükleyelim**:
-
-- ```
+**Paketleri Yükleyelim**:
+```javascript
 npm install
 ```
 
-**Projemizi başlatalım**:
-- ```javascript
+**Projeyi Başlatalım**
+```javascript
 node index.js
 ```
