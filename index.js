@@ -13,7 +13,7 @@ const io = new Server(server,{
 
 app.use(express.static("public"));
 
-var courrierLocation = {};
+var courierLocation = {};
 
 app.get('/', (req, res) => {
     res.send('Hello World!')
@@ -28,8 +28,9 @@ io.on("connection", function (socket) {
     });
 
     socket.on("courierLoc", function (data) {
-        io.to(data.orderID).emit('courierLocation', data.lat, data.long, data.orderID);
-        console.log(data.lat + " " + data.long + " " + data.orderID);
+        courierLocation[data.orderID] = data;
+        io.to(data.orderID).emit('courierLocation', courierLocation[data.orderID]);
+        console.log(courierLocation[data.orderID]);
     });
 
 
